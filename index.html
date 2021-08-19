@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c8b53bf6b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="" class="logo">Logo</a>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#first-section" class="nav-menu-link">About Me</a></li>
+                <li class="nav-menu-item"><a href="#second-section" class="nav-menu-link">Projects</a></li>
+                <li class="nav-menu-item"><a href="#section-three" class="nav-menu-link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content1">
+        <div class="content">
+            <h1 class="content__text title">I'm Juan Pablo Dulce</h1>
+            <h2 class="content__text">A Front-End Developer</h2>
+            <button class="content__button">Let's Talk</button>
+        </div>
+    </section>
+    <section class="section1" id="first-section">
+        <h2 class="section__title">About Me</h2>
+        <div class="about">
+            <div class="about__profile">
+                <img src="/img/about.png" class="about__img">
+            </div>
+            <div class="about__info">
+                <h3 class="about__title">Hey</h3>
+                <p class="about__text">I'm Juan Pablo Dulce and I'm a front end developer, I love web design and ui design, I like to explore new trends in web design and see what other designers are implementing. I have knowledge in HTML5, CSS3, SASS, Javascript, Figma, Photoshop and illustrator. I am currently learning new technologies to be a better designer and developer, among them React.JS.</p>
+                <a href="/cv.pdf" download="cv.pdf" class="about__button">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="second-section">
+        <h2 class="project__title">Projects</h2>
+        <div class="projects__container">
+            <div class="project__card">
+                <div class="image__container">
+                    <img loading="lazy" class="project__image" src="/img/1.jpg">
+                </div>
+                <h3 class="project__name">Lorem</h3>
+                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
+                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
+                <button class="project__button">Visit</button>
+            </div>
+            <div class="project__card">
+                <div class="image__container">
+                    <img loading="lazy" class="project__image" src="/img/2.jpg">
+                </div>
+                <h3 class="project__name">Lorem</h3>
+                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
+                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
+                <button class="project__button">Visit</button>
+            </div>
+            <div class="project__card">
+                <div class="image__container">
+                    <img loading="lazy" class="project__image" src="/img/3.jpg">
+                </div>
+                <h3 class="project__name">Lorem</h3>
+                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
+                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
+                <button class="project__button">Visit</button>
+            </div>
+        </div>
+    </section>
+    <section class="section2" id="section-three">
+        <form class="form" id="contact-form" action="POST" data-netlify="true">
+            <h2 class="form__title">Contact Me</h2>
+            <input name="name" type="text" class="form__input" placeholder="Name" required>
+            <input name="email" type="email" class="form__input" placeholder="Email" required>
+            <input name="subject" type="text" class="form__input" placeholder="Subject" required>
+            <textarea name="message" class="form__input form__textarea" placeholder="Message" required
+                class="prueba" rows="4"></textarea>
+            <input type="submit" class="form__button" value="Send">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social-media">
+            <a class="footer__icons" href="#"><i class="fab fa-github-square"></i></a>
+            <a class="footer__icons" href="#"><i class="fab fa-linkedin"></i></a>
+            <a class="footer__icons" href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <p class="footer__text">Made by Juan Pablo Dulce</p>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+</html>
