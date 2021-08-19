@@ -23,6 +23,7 @@ body {
     height: 4rem;
     position: fixed;
     width: 100%;
+    max-width: 1366px;
     top: 0;
     transition: 300ms;
 }
@@ -107,6 +108,7 @@ body {
 .content1 {
     position: relative;
     width: 100%;
+    max-width: 1366px;
     height: 40rem;
     display: flex;
     flex-direction: column;
@@ -163,6 +165,7 @@ body {
 .section1 {
     margin-top: 4rem;
     width: 100%;
+    max-width: 1366px;
     display: flex;
     flex-direction: column;
 }
@@ -241,6 +244,7 @@ body {
     display: flex;
     margin-top: 4rem;
     width: 100%;
+    max-width: 1366px;
     justify-content: center;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -315,6 +319,7 @@ body {
 
 .footer {
     width: 100%;
+    max-width: 1366px;
     height: 7rem;
     background-color: var(--color);
     display: flex;
@@ -344,6 +349,7 @@ body {
     margin-bottom: 8rem;
     display: flex;
     width: 100%;
+    max-width: 1366px;
     flex-direction: column;
 }
 
