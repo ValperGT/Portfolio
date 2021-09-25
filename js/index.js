@@ -9,6 +9,7 @@ const submit = document.querySelector(".form");
 const inputs = document.querySelectorAll(".form__input")
 
 submit.addEventListener("submit", e =>{
+  let success;
   e.preventDefault();
   fetch(FORM_URL, {
       method: "POST",
@@ -17,7 +18,9 @@ submit.addEventListener("submit", e =>{
       .then(response => {
           if(response.ok){
               response.json();
+              success = true;
           }else{
+              success = false;
               alert("Something went wrong, please try again")
           }
       })
@@ -27,6 +30,7 @@ submit.addEventListener("submit", e =>{
   inputs.forEach(input =>{
       input.value = "";
   });
+    swal("Message sent succesfully");
 });
 
 const section1Options = {
