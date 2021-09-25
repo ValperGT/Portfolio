@@ -4,6 +4,30 @@ const navMenu = document.querySelector(".nav-menu");
 const menuElements = document.querySelectorAll(".nav-menu-link");
 const header = document.querySelector(".header");
 const section1 = document.querySelector(".content1");
+const FORM_URL = "https://formsubmit.co/ajax/jdulcedev@gmail.com";
+const submit = document.querySelector(".form");
+const inputs = document.querySelectorAll(".form__input")
+
+submit.addEventListener("submit", e =>{
+  e.preventDefault();
+  fetch(FORM_URL, {
+      method: "POST",
+      body: new FormData(e.target)
+  })
+      .then(response => {
+          if(response.ok){
+              response.json();
+          }else{
+              alert("Something went wrong, please try again")
+          }
+      })
+      .then(data =>{
+          console.log(data)
+      })
+  inputs.forEach(input =>{
+      input.value = "";
+  });
+});
 
 const section1Options = {
   rootMargin: "-120px 0px 0px 0px"

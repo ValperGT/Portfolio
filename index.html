@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="" class="logo">Logo</a>
+            <a href="#header" class="logo">JDulceDev</a>
             <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
             </button>
@@ -32,7 +32,7 @@
             </ul>
         </nav>
     </header>
-    <section class="content1">
+    <section class="content1" id="header">
         <div class="content">
             <h1 class="content__text title">I'm Juan Pablo Dulce</h1>
             <h2 class="content__text">A Front-End Developer</h2>
@@ -46,9 +46,8 @@
                 <img src="/img/about.png" class="about__img">
             </div>
             <div class="about__info">
-                <h3 class="about__title">Hey</h3>
-                <p class="about__text">I'm Juan Pablo Dulce and I'm a front end developer, I love web design and ui design, I like to explore new trends in web design and see what other designers are implementing. I have knowledge in HTML5, CSS3, SASS, Javascript, Figma, Photoshop and illustrator. I am currently learning new technologies to be a better designer and developer, among them React.JS.</p>
-                <a href="/cv.pdf" download="cv.pdf" class="about__button">Download CV</a>
+                <h3 class="about__title">Hello!</h3>
+                <p class="about__text">I'm Juan Pablo Dulce a front end developer, I love web design, I like to explore new trends and see what other designers are implementing. I have knowledge in HTML5, CSS3, SASS, Javascript, React.JS, Figma, Photoshop and illustrator. And every day i'm studying to get my skills to a higher level</p>
             </div>
         </div>
     </section>
@@ -56,36 +55,24 @@
         <h2 class="project__title">Projects</h2>
         <div class="projects__container">
             <div class="project__card">
-                <div class="image__container">
-                    <img loading="lazy" class="project__image" src="/img/1.jpg">
-                </div>
-                <h3 class="project__name">Lorem</h3>
-                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
-                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
-                <button class="project__button">Visit</button>
+                <h3 class="project__name">Pokedex</h3>
+                <p class="project__text">This pokedex allows us to search for a pokemon by its name or by its number in order to visualize its data.</p>
+                <a target="_BLANK" href="https://jdulce-pokedex.netlify.app/" class="project__button">Live Demo</a>
             </div>
             <div class="project__card">
-                <div class="image__container">
-                    <img loading="lazy" class="project__image" src="/img/2.jpg">
-                </div>
-                <h3 class="project__name">Lorem</h3>
-                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
-                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
-                <button class="project__button">Visit</button>
+                <h3 class="project__name">Counter</h3>
+                <p class="project__text">counter made with react.js that allows us to increment, decrement or reset a number.</p>
+                <a target="_BLANK" href="https://valpergt.github.io/counter-with-react/" class="project__button">Live Demo</a>
             </div>
             <div class="project__card">
-                <div class="image__container">
-                    <img loading="lazy" class="project__image" src="/img/3.jpg">
-                </div>
-                <h3 class="project__name">Lorem</h3>
-                <p class="project__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est amet tempore
-                    porro mollitia consequatur quos eum dolores quo, sequi reiciendis quam magni</p>
-                <button class="project__button">Visit</button>
+                <h3 class="project__name">To Do List</h3>
+                <p class="project__text">To do list made with html, css and vanilla javascript, this application allows us to add and delete tasks.</p>
+                <a target="_BLANK" href="https://taskinserter.netlify.app/" class="project__button">Live Demo</a>
             </div>
         </div>
     </section>
     <section class="section2" id="section-three">
-        <form class="form" id="contact-form" action="POST" data-netlify="true">
+        <form class="form">
             <h2 class="form__title">Contact Me</h2>
             <input name="name" type="text" class="form__input" placeholder="Name" required>
             <input name="email" type="email" class="form__input" placeholder="Email" required>
@@ -97,9 +84,9 @@
     </section>
     <footer class="footer">
         <div class="social-media">
-            <a class="footer__icons" href="#"><i class="fab fa-github-square"></i></a>
-            <a class="footer__icons" href="#"><i class="fab fa-linkedin"></i></a>
-            <a class="footer__icons" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a class="footer__icons" target="_BLANK" href="https://github.com/ValperGT"><i class="fab fa-github-square"></i></a>
+            <a class="footer__icons" target="_BLANK" href="https://www.linkedin.com/in/juan-pablo-dulce-chavarro-927899216"><i class="fab fa-linkedin"></i></a>
+            <a class="footer__icons" target="_BLANK" href="https://facebook.com/juanpablodulcech"><i class="fab fa-facebook-square"></i></a>
         </div>
         <p class="footer__text">Made by Juan Pablo Dulce</p>
     </footer>
