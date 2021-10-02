@@ -148,6 +148,8 @@ body {
 }
 
 .content__button {
+    text-align: center;
+    text-decoration: none;
     color: white;
     background-color: var(--color);
     border: none;
